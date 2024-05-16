@@ -4,21 +4,26 @@ body {
     padding: 0;
 }
 
+
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 10px;
 }
 
-h1 {
-    text-align: center;
-}
-a {
-    text-decoration: none;
-}
-p{
-    text-align: center;
-}
 .paintings-list {
     list-style: none;
     padding: 0;
@@ -41,7 +46,4 @@ p{
 .paintings-list li h2 {
     margin-top: 10px;
     text-align: center;
-}
-.center {
-    margin-left: 7.8%;
 }
