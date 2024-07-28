@@ -1,407 +1,143 @@
-<html class="no-js js-menubar translated-ltr" lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-dns-prefetch-control" content="on">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    
-    <link rel="stylesheet" href="/css/gallery1_min.css">
-    <link rel="stylesheet" href="/css/gallery2_min.css">
-    <link rel="stylesheet" href="/css/gallery3_min.css">
-    <link rel="stylesheet" href="/css/style_newmain.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
     <style>
-        .loader-overlay {
-            background: #222;
-            color: #62a8ea;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+
         body {
-          color: #62a8ea;
+            font-family: 'Lora', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #000000;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        main.grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .grid-item {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
         }
     </style>
-    
-    <!-- Inicio -->
-    <title>VG | Página Principal</title>
-    <!-- <script src="//conoret.com/dsp?h=gallerix.ru&amp;r=0.8368737365906931" type="text/javascript" defer=""
-        async=""></script> -->
 </head>
-
-<body class="defs--gx site-menubar-fold-alt bodycolormode greymode site-menubar-hide site-menubar-unfold">
-    
-  <div style="padding-left: 20px;">
-    <div class="tab-pane animation-fade active" id="tab-1" role="tabpanel">
-      <p class="pretext" style="font-size: 25px; color: white;">Leonardo Da Vinci</p>
-      <div class="pic"><a class="animsition-link" >
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/1892879652/" width=150 height=150 alt="Mona Lisa , Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/1892879652.webp" width="150" height="150" alt="Mona Lisa , Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Mona Lisa
-        </a></div>
-      <div class="pic"><a class="animsition-link" >
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/2129753821/" width=150 height=150 alt="The Last Supper, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/2129753821.webp" width="150" height="150" alt="The Last Supper, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>The Last Supper
-        </a></div>
-      <div class="pic"><a class="animsition-link" >
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/594331897/" width=150 height=150 alt="Lady with an Ermine, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/594331897.webp" width="150" height="150" alt="Lady with an Ermine, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Lady with an Ermine
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-609186540">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/609186540/" width=150 height=150 alt="The Isleworth Mona Lisa, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/609186540.webp" width="150" height="150" alt="The Isleworth Mona Lisa, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>The Isleworth Mona Lisa
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-24877171">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/24877171/" width=150 height=150 alt="Madonna Litta, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/24877171.webp" width="150" height="150" alt="Madonna Litta, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Madonna Litta
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-1855224707">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/1855224707/" width=150 height=150 alt="Saint Jerome, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/1855224707.webp" width="150" height="150" alt="Saint Jerome, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Saint Jerome
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-578431862">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/578431862/" width=150 height=150 alt="Annunciation, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/578431862.webp" width="150" height="150" alt="Annunciation, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Annunciation
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-1109245112">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/1109245112/" width=150 height=150 alt="Leda and the Swan , Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/1109245112.webp" width="150" height="150" alt="Leda and the Swan , Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Leda and the Swan
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-955956996">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/955956996/" width=150 height=150 alt="Saint Jean-Baptiste, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/955956996.webp" width="150" height="150" alt="Saint Jean-Baptiste, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Saint Jean-Baptiste
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-335171808">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/335171808/" width=150 height=150 alt="The Last Supper, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/335171808.webp" width="150" height="150" alt="The Last Supper, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>The Last Supper
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-411228900">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/411228900/" width=150 height=150 alt="Saint John , Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/411228900.webp" width="150" height="150" alt="Saint John , Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Saint John
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-311027006">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/311027006/" width=150 height=150 alt="Benois Madonna, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/311027006.webp" width="150" height="150" alt="Benois Madonna, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Benois Madonna
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-19241135">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/19241135/" width=150 height=150 alt="The Baptism of Christ , Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/19241135.webp" width="150" height="150" alt="The Baptism of Christ , Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>The Baptism of Christ
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-139">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/139/" width=150 height=150 alt="St. John the Baptist, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/139.webp" width="150" height="150" alt="St. John the Baptist, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>St. John the Baptist
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-365227669">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/365227669/" width=150 height=150 alt="Annunciation – detail, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/365227669.webp" width="150" height="150" alt="Annunciation – detail, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Annunciation – detail
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-1204338165">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/1204338165/" width=150 height=150 alt="Madonna of the Rocks, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/1204338165.webp" width="150" height="150" alt="Madonna of the Rocks, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Madonna of the Rocks
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-421538776">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/421538776/" width=150 height=150 alt="Adorazione dei Magi, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/421538776.webp" width="150" height="150" alt="Adorazione dei Magi, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Adorazione dei Magi
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-877976757">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/877976757/" width=150 height=150 alt="Baptism of Christ, detail, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/877976757.webp" width="150" height="150" alt="Baptism of Christ, detail, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Baptism of Christ, detail
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-1267290729">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/1267290729/" width=150 height=150 alt="Virgin of the Rocks, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/1267290729.webp" width="150" height="150" alt="Virgin of the Rocks, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Virgin of the Rocks
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-21706426">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/21706426/" width=150 height=150 alt="«La Bella Principessa», Profile of a Young Fiancee, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/21706426.webp" width="150" height="150" alt="«La Bella Principessa», Profile of a Young Fiancee, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>«La Bella Principessa», Profile of a Young Fiancee
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-6722">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/6722/" width=150 height=150 alt="Head Of The Savior, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/6722.webp" width="150" height="150" alt="Head Of The Savior, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Head Of The Savior
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-2008067993">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/2008067993/" width=150 height=150 alt="The Virgin and Child with Saint Anne, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/2008067993.webp" width="150" height="150" alt="The Virgin and Child with Saint Anne, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>The Virgin and Child with Saint Anne
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-299407427">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/299407427/" width=150 height=150 alt="The Virgin and Child with St Anne and St John the Baptist, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/299407427.webp" width="150" height="150" alt="The Virgin and Child with St Anne and St John the Baptist, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>The Virgin and Child with St Anne and St John the …
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-1693882151">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/1693882151/" width=150 height=150 alt="Portrait of Ginevra Benci, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/1693882151.webp" width="150" height="150" alt="Portrait of Ginevra Benci, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Portrait of Ginevra Benci
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-49905288">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/49905288/" width=150 height=150 alt="Madonna of the Carnation, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/49905288.webp" width="150" height="150" alt="Madonna of the Carnation, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Madonna of the Carnation
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-1584600302">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/1584600302/" width=150 height=150 alt="The Musician, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/1584600302.webp" width="150" height="150" alt="The Musician, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>The Musician
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-1591267890">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/1591267890/" width=150 height=150 alt="Portrait of Ginevra Benci , Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/1591267890.webp" width="150" height="150" alt="Portrait of Ginevra Benci , Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Portrait of Ginevra Benci
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-1379905838">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/1379905838/" width=150 height=150 alt="Leda and the Swan , Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/1379905838.webp" width="150" height="150" alt="Leda and the Swan , Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Leda and the Swan
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-20185559">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/20185559/" width=150 height=150 alt="Anonymous Artist 17c Presumed Portrait of Leonardo da Vinci, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/20185559.webp" width="150" height="150" alt="Anonymous Artist 17c Presumed Portrait of Leonardo da Vinci, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Anonymous Artist 17c Presumed Portrait of Leonar…
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-72456827">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/72456827/" width=150 height=150 alt="Madonna and Child [Workshop], Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/72456827.webp" width="150" height="150" alt="Madonna and Child [Workshop], Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Madonna and Child [Workshop]
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-1238804966">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/1238804966/" width=150 height=150 alt="The Battle of Anghiari, detail, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/1238804966.webp" width="150" height="150" alt="The Battle of Anghiari, detail, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>The Battle of Anghiari, detail
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-77144201">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/77144201/" width=150 height=150 alt="Columbine , Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/77144201.webp" width="150" height="150" alt="Columbine , Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Columbine
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-940233573">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/940233573/" width=150 height=150 alt="Madonna with the Yarnwinder, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/940233573.webp" width="150" height="150" alt="Madonna with the Yarnwinder, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Madonna with the Yarnwinder
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-1413258033">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/1413258033/" width=150 height=150 alt="Portrait of a Young Lady [Follower], Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/1413258033.webp" width="150" height="150" alt="Portrait of a Young Lady [Follower], Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Portrait of a Young Lady [Follower]
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-71849207">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/71849207/" width=150 height=150 alt="Leda and the Swan , Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/71849207.webp" width="150" height="150" alt="Leda and the Swan , Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Leda and the Swan
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-1480861609">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/1480861609/" width=150 height=150 alt="La Belle Ferronniere , Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/1480861609.webp" width="150" height="150" alt="La Belle Ferronniere , Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>La Belle Ferronniere
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-3165167">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/3165167/" width=150 height=150 alt="Annonciation, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/3165167.webp" width="150" height="150" alt="Annonciation, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Annonciation
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-90270019">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/90270019/" width=150 height=150 alt="Virgin and Child, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/90270019.webp" width="150" height="150" alt="Virgin and Child, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Virgin and Child
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-1191823619">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/1191823619/" width=150 height=150 alt="Vitruvian Man, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/1191823619.webp" width="150" height="150" alt="Vitruvian Man, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Vitruvian Man
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-1523792668">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/1523792668/" width=150 height=150 alt="Female head, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/1523792668.webp" width="150" height="150" alt="Female head, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Female head
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-81111851">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/81111851/" width=150 height=150 alt="The muscles of the shoulder, arm and neck, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/81111851.webp" width="150" height="150" alt="The muscles of the shoulder, arm and neck, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>The muscles of the shoulder, arm and neck
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-2088790996">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/2088790996/" width=150 height=150 alt="Face of the Angel for the Virgin of the Rocks, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/2088790996.webp" width="150" height="150" alt="Face of the Angel for the Virgin of the Rocks, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Face of the Angel for the Virgin of the Rocks
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-45870203">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/45870203/" width=150 height=150 alt="The muscles of the shoulder, arm and the bones of the foot, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/45870203.webp" width="150" height="150" alt="The muscles of the shoulder, arm and the bones of the foot, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>The muscles of the shoulder, arm and the bones of …
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-44">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/44/" width=150 height=150 alt="Design for a Giant Crossbow, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/44.webp" width="150" height="150" alt="Design for a Giant Crossbow, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Design for a Giant Crossbow
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-860333719">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/860333719/" width=150 height=150 alt="Head of Young Woman, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/860333719.webp" width="150" height="150" alt="Head of Young Woman, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Head of Young Woman
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-72780281">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/72780281/" width=150 height=150 alt="The cardiovascular system and principal organs of a woman, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/72780281.webp" width="150" height="150" alt="The cardiovascular system and principal organs of a woman, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>The cardiovascular system and principal organs of …
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-190239890">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/190239890/" width=150 height=150 alt="Head of a Woman, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/190239890.webp" width="150" height="150" alt="Head of a Woman, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Head of a Woman
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-1941635747">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/1941635747/" width=150 height=150 alt="Study for Saint Anne, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/1941635747.webp" width="150" height="150" alt="Study for Saint Anne, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Study for Saint Anne
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-53451701">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/53451701/" width=150 height=150 alt="The skeleton, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/53451701.webp" width="150" height="150" alt="The skeleton, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>The skeleton
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-31">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/31/" width=150 height=150 alt="Portrait Of A Bearded Man, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/31.webp" width="150" height="150" alt="Portrait Of A Bearded Man, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Portrait Of A Bearded Man
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-5395">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/5395/" width=150 height=150 alt="Landscape overlooking the Arno, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/5395.webp" width="150" height="150" alt="Landscape overlooking the Arno, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Landscape overlooking the Arno
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-600602412">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/600602412/" width=150 height=150 alt="Isabella d’Este, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/600602412.webp" width="150" height="150" alt="Isabella d’Este, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Isabella d’Este
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-10144679">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/10144679/" width=150 height=150 alt="Study for an Apostle from The Last Supper, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/10144679.webp" width="150" height="150" alt="Study for an Apostle from The Last Supper, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Study for an Apostle from The Last Supper
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-1249480236">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/1249480236/" width=150 height=150 alt="Head of a Man, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/1249480236.webp" width="150" height="150" alt="Head of a Man, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Head of a Man
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-52191877">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/52191877/" width=150 height=150 alt="The bones, muscles and tendons of the hand, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/52191877.webp" width="150" height="150" alt="The bones, muscles and tendons of the hand, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>The bones, muscles and tendons of the hand
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-25">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/25/" width=150 height=150 alt="Annunciation, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/25.webp" width="150" height="150" alt="Annunciation, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Annunciation
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-62287970">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/62287970/" width=150 height=150 alt="The muscles and tendons of the lower leg and foot, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/62287970.webp" width="150" height="150" alt="The muscles and tendons of the lower leg and foot, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>The muscles and tendons of the lower leg and foot
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-73327018">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/73327018/" width=150 height=150 alt="The vertebral column, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/73327018.webp" width="150" height="150" alt="The vertebral column, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>The vertebral column
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-172939689">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/172939689/" width=150 height=150 alt="Study of an old man, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/172939689.webp" width="150" height="150" alt="Study of an old man, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Study of an old man
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-60424690">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/60424690/" width=150 height=150 alt="The bust of a man in profile, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/60424690.webp" width="150" height="150" alt="The bust of a man in profile, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>The bust of a man in profile
-        </a></div>
-      <div class="pic"><a class="animsition-link" href="/album/Leonardo/pic/glrx-98708445">
-          <div class="a_dv1">
-            <!--img src="//cdn.gallerix.asia/j/369985082/V/98708445/" width=150 height=150 alt="Head of a Man in Profile, Leonardo da Vinci"--><img src="//cdn.gallerix.asia/j/V/369985082/98708445.webp" width="150" height="150" alt="Head of a Man in Profile, Leonardo da Vinci" loading="lazy" decoding="async">
-            <div class="a_shad1"></div>
-          </div>Head of a Man in Profile
-        </a></div><!--{FCNDS}-->
-    </div>
-  </div> 
-    
-    
-    </div><!--{FIN}-->
-  </main>
+<body>
+    <header>
+        <h1>Leonardo Da Vinci</h1>
+    </header>
+    <main class="grid-container">
+        <!-- Reemplaza las URLs de las imágenes con las de tus carátulas de películas -->
+        <div class="grid-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Leonardo_da_Vinci_-_Mona_Lisa_%28Louvre%2C_Paris%29.jpg/1200px-Leonardo_da_Vinci_-_Mona_Lisa_%28Louvre%2C_Paris%29.jpg  " width="auto" height="auto">
+          <p style="text-align: center;">Mona Lisa     </p>
+        </div>
+        <div class="grid-item">
+          <img src=" https://cdn.gallerix.asia/sr/V/369985082/1109245112.jpg " width="auto" height="auto">
+          <p style="text-align: center;"> Leda y el cisne    </p>
+        </div>
+        <div class="grid-item">
+          <img src="https://cdn.gallerix.asia/sr/V/369985082/955956996.jpg  " width="auto" height="auto">
+          <p style="text-align: center;">San Juan Bautista     </p>
+        </div>
+        <div class="grid-item">
+          <img src=" https://cdn.gallerix.asia/sr/V/369985082/1855224707.jpg " width="auto" height="auto">
+          <p style="text-align: center;">San Jerónimo     </p>
+        </div>
+        <div class="grid-item">
+          <img src="https://cdn.gallerix.asia/sr/V/369985082/24877171.jpg  " width="auto" height="auto">
+          <p style="text-align: center;">Madonna Litta     </p>
+        </div>
+        
+        <div class="grid-item">
+          <img src="https://cdn.gallerix.asia/sr/V/369985082/311027006.jpg  " width="auto" height="auto">
+          <p style="text-align: center;"> Madonna Benois    </p>
+        </div>
+        <div class="grid-item">
+          <img src="  " width="auto" height="auto">
+          <p style="text-align: center;">     </p>
+        </div>
+        <div class="grid-item">
+          <img src="  " width="auto" height="auto">
+          <p style="text-align: center;">     </p>
+        </div>
+        <div class="grid-item">
+          <img src="  " width="auto" height="auto">
+          <p style="text-align: center;">     </p>
+        </div>
+        <div class="grid-item">
+          <img src="  " width="auto" height="auto">
+          <p style="text-align: center;">     </p>
+        </div>
+        <div class="grid-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Statue_of_Leda_and_the_Swan_-_Getty_Museum_%2870.AA.110%29.jpg/1200px-Statue_of_Leda_and_the_Swan_-_Getty_Museum_%2870.AA.110%29.jpg  ">
+          <p style="text-align: center;"> Leda y el cisne   </p>
+        </div>
+        <div class="grid-item">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhggClCuZsiJkh-vAyNT6ZYgejq395TLFOBy7BEv0_7fOiRLdWqL-QzmuC4Gk9RYyBvdXl1ia-gn5TkDpqUzmHBeFGHcoMv21hnpXCCG_8Gia3ZuIG0nCvlhNhDkwB5AKSyUaKzpCqG89U/s1600/Dama+del+Armi%25C3%25B1o+de+Leonardo.jpg  " width="auto" height="auto">
+          <p style="text-align: center;"> Dama y el armiño    </p>
+        </div>
+          <div class="grid-item">
+          <img src="  " width="auto" height="auto">
+          <p style="text-align: center;">     </p>
+        </div>
+        <div class="grid-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg/300px-The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg  " width="auto" height="auto">
+          <p style="text-align: center;"> La última cena    </p>
+        </div>
+        <div class="grid-item">
+          <img src=" https://cdn.gallerix.asia/sr/V/369985082/578431862.jpg " width="auto" height="auto">
+          <p style="text-align: center;"> Anunciación    </p>
+        </div>
+    </main>
 </body>
-
 </html>
+<!-- 
+
+<div class="grid-item">
+    <img src="  " width="auto" height="auto">
+    <p style="text-align: center;">     </p>
+</div> -->
